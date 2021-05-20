@@ -1,16 +1,16 @@
-import React from 'react'
-import { IconName } from "react-icons/fa";
+import React from 'react';
+import { FaCartArrowDown } from "react-icons/fa";
 
-const CartWidget = () => {
+const cartWidget = () => {
 return (
 <>
-        <div className="cart-container">
-        <img src={IconName} alt=""/>
-        </div>
+        
+        <img src={FaCartArrowDown} alt=""/>
+    
 </>
 
 )
 
 }
 
-export default CartWidget
+export default cartWidget
