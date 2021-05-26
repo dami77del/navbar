@@ -1,28 +1,21 @@
-import React from 'react';
-import Card from './components/Cards/card';
+import {useState} from 'react';
 
-  
+const products = () => {
+    const [counter, setCounter] = useState(0);
 
-const Products = ({stock, initial}) => {
-const [stockRequired, setStockRequired] = useState(initial);
-    const onAdd = () => {
-        if (stock >= stockRequired +1) {
-            setStockRequired(stockRequired + 1);
-        }
-    };
-    return <div onClick={onAdd}>{stockRequired}</div>;
-}
-
-export default function App() {
+    const changeCounter =(value) => {
+        setCounter (counter +value);
+    }
     return (
-        <CardContainer>
-            <Card
-            title="Product"
-            imagen="data: utils/img/course.jpg"
-            > Info del curso
-            </Card>
-        </CardContainer>
-    )
- 
+    <>
+    <div className="container">
+        <button onClick={() => changeCounter(counter + 1)}>Sumar</button>
+        Counter:{counter} 
+        
 
-};
+    </div>
+    </>
+    )
+    }
+    
+export default products;
