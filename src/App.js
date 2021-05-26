@@ -4,7 +4,7 @@ import NavBar from './components/NavBar/Navbar';
 import CartWidget from './components/CartWidget/cartWidget';
 import Card from './components/Cards/card';
 import theme from './utils/theme';
-import Products from './components/Products/products';
+
 
 const App = () => {
   return (
@@ -12,7 +12,6 @@ const App = () => {
       <NavBar/>
       <CartWidget/>
       <Card/>
-      <Products/>
     </ThemeProvider>
   )
 }
