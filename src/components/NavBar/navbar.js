@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { AppBar, Tabs, Tab, Typography, Toolbar, Button } from '@material-ui/core';
+import React from 'react';
+import { AppBar, Typography, Toolbar, Button } from '@material-ui/core';
 
 import { GiBoxUnpacking } from 'react-icons/gi';
 import { DiGitBranch } from "react-icons/di";
@@ -11,10 +11,6 @@ import img  from "../../utils/img/logo.png";
 
 
 const Navbar = () => {
-    const [value, setValue] = useState(0);
-    const HandleClikTab = (e, newValue) => {
-        setValue(newValue)
-    };
     return (
         <>
             <AppBar color="primary">
